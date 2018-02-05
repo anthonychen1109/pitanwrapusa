@@ -62,9 +62,14 @@ ul.topnav {
   padding-top: 40px;
   position: relative;
   width: 100%;
-  img {
+  .header-logo {
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
   }
 }
 
@@ -138,6 +143,7 @@ ul.topnav {
 
 .menu {
   display: flex;
+  flex-grow: 2;
   flex-direction: column;
   margin-bottom: $margin-bot;
   margin-top: 40px;
@@ -216,7 +222,6 @@ ul.topnav {
   background-image: url('../images/7.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 2 * $margin-bot;
   margin-top: $margin-bot;
   padding-top: 40px;
 }
@@ -229,8 +234,11 @@ ul.topnav {
     position: relative;
     width: 50%;
     z-index: 999;
+    transition: .3s;
+
     @media only screen and (max-width: 800px) {
-      width: 80%;
+      margin-top: 10px;
+      width: 100%;
     }
     h2 {
       padding-top: 20px;
@@ -240,6 +248,7 @@ ul.topnav {
     p {
       font-size: .8em;
       text-align: center;
+      padding-bottom: 20px;
     }
   }
 }
@@ -290,6 +299,28 @@ ul.modal-hours {
   }
 }
 
+.modal-hours {
+  li {
+    text-align: center;
+  }
+}
+
+.footer-hours {
+  span {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.footer-pin {
+  span {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 // ################### MOBILE #####################
 
 @media only screen and (max-width: 800px) {
@@ -321,6 +352,7 @@ ul.modal-hours {
        display: inline;
        list-style: none;
        float: none;
+       padding-left: 10px;
        a {
            color: $nav-anchor-color;
            display: block;

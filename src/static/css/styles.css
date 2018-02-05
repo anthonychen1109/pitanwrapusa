@@ -46,9 +46,13 @@ ul.topnav li.dropdownIcon {
   padding-top: 40px;
   position: relative;
   width: 100%; }
-  .header img {
+  .header .header-logo {
     margin: 0 auto;
-    max-width: 100%; }
+    width: 100%; }
+    .header .header-logo img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%; }
 
 .carousel .carousel-item-1 {
   background-image: url("../images/1.jpg");
@@ -101,6 +105,7 @@ ul.topnav li.dropdownIcon {
 
 .menu {
   display: flex;
+  flex-grow: 2;
   flex-direction: column;
   margin-bottom: 40px;
   margin-top: 40px; }
@@ -156,7 +161,6 @@ ul.topnav li.dropdownIcon {
   background-image: url("../images/7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 80px;
   margin-top: 40px;
   padding-top: 40px; }
 
@@ -166,17 +170,20 @@ ul.topnav li.dropdownIcon {
   margin-top: -120px;
   position: relative;
   width: 50%;
-  z-index: 999; }
+  z-index: 999;
+  transition: .3s; }
   @media only screen and (max-width: 800px) {
     .contact-info div {
-      width: 80%; } }
+      margin-top: 10px;
+      width: 100%; } }
   .contact-info div h2 {
     padding-top: 20px;
     text-align: center;
     text-transform: uppercase; }
   .contact-info div p {
     font-size: .8em;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 20px; }
 
 .footer {
   align-items: center;
@@ -208,6 +215,15 @@ ul.footer {
 ul.modal-hours li {
   list-style: none; }
 
+.modal-hours li {
+  text-align: center; }
+
+.footer-hours span:hover {
+  cursor: pointer; }
+
+.footer-pin span:hover {
+  cursor: pointer; }
+
 @media only screen and (max-width: 800px) {
   ul.topnav {
     align-items: center; }
@@ -231,7 +247,8 @@ ul.modal-hours li {
     ul.responsive li {
       display: inline;
       list-style: none;
-      float: none; }
+      float: none;
+      padding-left: 10px; }
       ul.responsive li a {
         color: black;
         display: block;
