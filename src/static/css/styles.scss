@@ -1,0 +1,373 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+h2 {
+      font-family: "Raleway, sans-serif";
+}
+
+p {
+  font-family: Verdana;
+}
+
+// ################### NAVBAR #####################
+
+ul.topnav {
+  align-items: center;
+  background-color: $nav-background-color;
+  color: $nav-anchor-color;
+  display: flex;
+  font-size: $nav-font-size;
+  height: $nav-height;
+  justify-content: space-around;
+  opacity: $opacity;
+  padding-left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+  li {
+    list-style: none;
+    a {
+      color: $nav-anchor-color;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+ul.topnav {
+  li.dropdownIcon {
+    display: none;
+  }
+}
+
+// ################### HEADER #####################
+
+.header {
+  background-attachment: fixed;
+  background-image: url('../images/8.jpg');
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin-bottom: $margin-bot;
+  padding-top: 40px;
+  position: relative;
+  width: 100%;
+  img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+// ################### CAROUSEL #####################
+.carousel {
+  .carousel-item-1 {
+    background-image: url('../images/1.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 400px;
+  }
+  .carousel-item-2 {
+    background-image: url('../images/2.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 400px;
+  }
+  .carousel-item-3 {
+    background-image: url('../images/3.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 400px;
+  }
+  .carousel-indicators {
+    li {
+      border-radius: 50%;
+    }
+  }
+}
+
+// ################### ABOUT #####################
+.about {
+  display: flex;
+  justify-content: space-around;
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+  .about-image {
+    flex: 1;
+    padding: $about-padding;
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
+  .about-text {
+    flex: 1;
+    padding: $about-padding;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+// ################### MENU #####################
+.menu-header {
+  font-family: $body-font;
+  text-align: center;
+}
+
+.item-header {
+  font-family: $body-font;
+  text-align: center;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $margin-bot;
+  margin-top: 40px;
+}
+
+.menu-nav {
+  display: flex;
+  // flex-direction: column;
+  padding: 20px;
+  h2 {
+    margin-bottom: $margin-bot;
+  }
+  a {
+    font-family: $body-font;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    padding: 5px;
+    a {
+      padding: 5px;
+    }
+  }
+}
+
+.menu-display {
+  flex: 2;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 30px;
+  div:nth-child(1) {
+    text-align: center;
+  }
+  div:nth-child(2) {
+    text-align: center;
+  }
+  div {
+    font-family: $body-font;
+  }
+}
+
+.customize {
+  .item-header {
+    margin-bottom: $margin-bot;
+  }
+  .item.subheader {
+    display: flex;
+    flex-direction: row;
+  }
+  .customize-choose {
+    display: flex;
+    justify-content: space-around;
+    h3 {
+      color: red;
+    }
+  }
+  .customize-item {
+    display: flex;
+  }
+}
+
+.customize-side {
+  h5 {
+    text-align: center;
+  }
+}
+
+// ################### CONTACT #####################
+.contact {
+  // background: linear-gradient(to bottom right, #B2FF59, #CCFF90);
+  background-image: url('../images/7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2 * $margin-bot;
+  margin-top: $margin-bot;
+  padding-top: 40px;
+}
+
+.contact-info {
+  div {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -120px;
+    position: relative;
+    width: 50%;
+    z-index: 999;
+    @media only screen and (max-width: 800px) {
+      width: 80%;
+    }
+    h2 {
+      padding-top: 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: .8em;
+      text-align: center;
+    }
+  }
+}
+
+.contact-header {
+  // font-family: $body-font;
+}
+
+
+// ################### FOOTER #####################
+.footer {
+  align-items: center;
+  background-color: $footer-background-color;
+  color: $footer-font-color;
+  display: flex;
+  font-size: $footer-font-size;
+  height: $footer-height;
+  justify-content: space-around;
+  opacity: $opacity;
+  li {
+    list-style: none;
+    text-transform: uppercase;
+    a {
+      color: $footer-font-color;
+      text-decoration: none;
+    }
+  }
+}
+
+ul.footer {
+  bottom: 0;
+  padding-left: 0;
+  width: 100%;
+  li.footer-hours {
+    display: none;
+  }
+  li.footer-pin {
+    display: none;
+  }
+  li.footer-tel {
+    display: none;
+  }
+}
+
+ul.modal-hours {
+  li {
+    list-style: none;
+  }
+}
+
+// ################### MOBILE #####################
+
+@media only screen and (max-width: 800px) {
+// ################### NAVBAR #####################
+  ul.topnav {
+    align-items: center;
+    li:not(:nth-child(1)) {
+      display: none;
+    }
+    li.logo {
+      margin: 0 auto;
+    }
+    li.dropdownIcon {
+      display: block;
+      padding-right: $nav-padding;
+    }
+  }
+
+  ul.responsive {
+    background-color: $nav-background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: $opacity;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    li {
+       display: inline;
+       list-style: none;
+       float: none;
+       a {
+           color: $nav-anchor-color;
+           display: block;
+           font-size: $nav-font-size;
+           margin-bottom: $nav-margin;
+           padding-top: $nav-padding;
+           text-decoration: none;
+         }
+     }
+  }
+
+  ul.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: $nav-padding;
+  }
+
+// ################### MENU #####################
+.menu-banner {
+  display: none;
+}
+
+.customize-item {
+  display: flex;
+  flex-direction: column;
+}
+
+// ################### FOOTER #####################
+
+  ul.footer {
+    li {
+      display: none;
+    }
+  }
+
+  ul.footer {
+    li.footer-hours {
+      display: block;
+    }
+    li.footer-pin {
+      display: block;
+    }
+    li.footer-tel {
+      display: block;
+    }
+  }
+
+
+}
