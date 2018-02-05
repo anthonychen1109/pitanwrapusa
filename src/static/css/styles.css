@@ -9,7 +9,8 @@ h2 {
   font-family: "Raleway, sans-serif"; }
 
 p {
-  font-family: Verdana; }
+  font-family: Verdana;
+  margin-bottom: 0; }
 
 ul.topnav {
   align-items: center;
@@ -47,8 +48,11 @@ ul.topnav li.dropdownIcon {
   position: relative;
   width: 100%; }
   .header .header-logo {
-    margin: 0 auto;
-    width: 100%; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; }
     .header .header-logo img {
       display: block;
       margin: 0 auto;
@@ -116,9 +120,11 @@ ul.topnav li.dropdownIcon {
   .menu-nav h2 {
     margin-bottom: 40px; }
   .menu-nav a {
+    color: #759311;
     font-family: Verdana;
     margin: 0 auto;
-    padding: 20px; }
+    padding: 20px;
+    text-decoration: none; }
   @media only screen and (max-width: 800px) {
     .menu-nav {
       flex-direction: column;
@@ -162,6 +168,7 @@ ul.topnav li.dropdownIcon {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 40px;
+  padding-bottom: 40px;
   padding-top: 40px; }
 
 .contact-info div {
@@ -182,8 +189,9 @@ ul.topnav li.dropdownIcon {
     text-transform: uppercase; }
   .contact-info div p {
     font-size: .8em;
-    text-align: center;
-    padding-bottom: 20px; }
+    text-align: center; }
+  .contact-info div .hours {
+    padding-bottom: 10px; }
 
 .footer {
   align-items: center;
