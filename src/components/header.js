@@ -5,7 +5,7 @@ import Logo from '../static/images/logo.png';
 
 const Header = () =>
   <div className="header">
-    <img src={Logo} alt="logo"/>
+    <div className="header-logo"><img src={Logo} alt="logo"/></div>
   </div>
 
 export default Header;

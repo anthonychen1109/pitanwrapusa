@@ -10,7 +10,7 @@ const customStyles = {
    left              : 0,
    right             : 0,
    bottom            : 0,
-   backgroundColor   : 'rgba(255, 255, 255, 0.75)'
+   backgroundColor   : 'rgba(255, 255, 255, 0.75)',
  },
   content : {
     top                   : '50%',
@@ -18,7 +18,9 @@ const customStyles = {
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    transform             : 'translate(-50%, -50%)',
+    height                : '300px',
+    width                 : '100%'
   }
 };
 
@@ -61,7 +63,7 @@ class Footer extends Component {
         <ul className="footer">
           <li>511 E Genesee Street Fayetteville NY, 13066</li>
             <li className="footer-hours" onClick={this.openHoursModal}>
-              <a href="#">Hours</a>
+              <span>Hours</span>
             </li>
             <li>
               <Modal
@@ -86,7 +88,7 @@ class Footer extends Component {
             <li>fri-sat: 10:30am-10:00pm</li>
             <li>sun: 11:00am-9:00pm</li>
             <li className="footer-pin">
-              <a href="#" onClick={this.openModal}>&#x1f4cc; map</a>
+              <span role="img" aria-label="Pin" onClick={this.openModal}>&#x1f4cc; map</span>
             </li>
             <li>
               <Modal
@@ -96,18 +98,19 @@ class Footer extends Component {
                   contentLabel="Modal"
                 >
                 <p className="text-center">Pita & Wrap</p>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.514749304824!2d-76.00789726707848!3d43.03059997914765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d98c24c43bdf5d%3A0x920570503451e705!2s511+E+Genesee+St%2C+Fayetteville%2C+NY+13066!5e0!3m2!1sen!2sus!4v1517846541481"
-                  width="100%"
+                <Iframe
+                  title="pita & wrap"
+                  url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.514749304824!2d-76.00789726707848!3d43.03059997914765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d98c24c43bdf5d%3A0x920570503451e705!2s511+E+Genesee+St%2C+Fayetteville%2C+NY+13066!5e0!3m2!1sen!2sus!4v1517846541481"
+                  width="90%"
                   height="auto"
                   frameBorder="0"
                   allowFullScreen>
-                </iframe>
+                </Iframe>
               </Modal>
             </li>
-          <li className="footer-tel">&#128222; 315-637-3197/3198</li>
-          <li id="footer-tel">&#128222; 315-637-3197</li>
-          <li id="footer-tel">&#128222; 315-637-3198</li>
+          <li className="footer-tel"><span role="img" aria-label="tel-1">&#128222; 315-637-3197/3198</span></li>
+          <li id="footer-tel"><span role="img" aria-label="tel-2">&#128222; 315-637-3197</span></li>
+          <li id="footer-tel"><span role="img" aria-label="tel-3">&#128222; 315-637-3198</span></li>
         </ul>
       </nav>
     )
