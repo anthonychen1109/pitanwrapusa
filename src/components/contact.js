@@ -22,6 +22,7 @@ const Contact = () =>
               FAYETTEVILLE NY, 13066
             </strong>
           </p>
+          <br />
           <p>
             <strong>PHONE</strong>
             <br />
@@ -31,7 +32,7 @@ const Contact = () =>
           </p>
           <br />
           <p><strong>HOURS</strong></p>
-          <p>
+          <p className="hours">
             Monday 10:30 AM to 9:30 PM
             <br />
             Tuesday 10:30 AM to 9:30 PM

@@ -23,7 +23,6 @@ class Navbar extends Component {
       <nav>
         <ul className="topnav" id="dropdownClick">
           <li className="logo"><a href="">Pita & Wrap</a></li>
-          <li><a href="">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#">Order Online</a></li>
