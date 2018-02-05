@@ -72,7 +72,7 @@ class Footer extends Component {
                   style={customStyles}
                   contentLabel="Modal"
                 >
-                <p className="text-center">Hours</p>
+                <p className="text-center"><strong>Hours</strong></p>
                   <ul className="modal-hours">
                     <li>Monday: 10:30am-9:30pm</li>
                     <li>Tuesday: 10:30am-9:30pm</li>
@@ -97,7 +97,7 @@ class Footer extends Component {
                   style={customStyles}
                   contentLabel="Modal"
                 >
-                <p className="text-center">Pita & Wrap</p>
+                <p className="text-center"><strong>Pita & Wrap</strong></p>
                 <Iframe
                   title="pita & wrap"
                   url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.514749304824!2d-76.00789726707848!3d43.03059997914765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d98c24c43bdf5d%3A0x920570503451e705!2s511+E+Genesee+St%2C+Fayetteville%2C+NY+13066!5e0!3m2!1sen!2sus!4v1517846541481"
