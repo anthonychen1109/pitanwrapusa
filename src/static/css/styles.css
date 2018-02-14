@@ -58,6 +58,11 @@ ul.topnav li.dropdownIcon {
       margin: 0 auto;
       max-width: 100%; }
 
+.order-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
 .carousel .carousel-item-1 {
   background-image: url("../images/1.jpg");
   background-position: center;
