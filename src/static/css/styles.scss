@@ -222,6 +222,15 @@ ul.topnav {
   }
 }
 
+.customize-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  h3, p {
+    text-align: center;
+  }
+}
+
 // ################### CONTACT #####################
 .contact {
   // background: linear-gradient(to bottom right, #B2FF59, #CCFF90);

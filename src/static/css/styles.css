@@ -163,6 +163,13 @@ ul.topnav li.dropdownIcon {
 .customize-side h5 {
   text-align: center; }
 
+.customize-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 5px; }
+  .customize-desc h3, .customize-desc p {
+    text-align: center; }
+
 .contact {
   background-image: url("../images/7.jpg");
   background-repeat: no-repeat;
