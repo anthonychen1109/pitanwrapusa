@@ -14,7 +14,7 @@ class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentItem: 'customize'
+      currentItem: 'salad'
     };
     this.setItem = this.setItem.bind(this);
     this.renderItem = this.renderItem.bind(this);
