@@ -68,6 +68,9 @@ ul.topnav li.dropdownIcon {
 .wrapper {
   width: 100%;
   text-align: center; }
+  @media only screen and (max-width: 800px) {
+    .wrapper {
+      padding-top: 40px; } }
 
 .menu-button {
   background-color: #AEEA00;
