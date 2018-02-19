@@ -14,7 +14,7 @@ class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentItem: 'salad'
+      currentItem: 'customize'
     };
     this.setItem = this.setItem.bind(this);
     this.renderItem = this.renderItem.bind(this);
@@ -41,18 +41,11 @@ class Menu extends Component {
 
   render() {
     return (
-      <div className="menu-section container">
+      <div id="menu" className="menu-section container">
         <div className="menu-banner">
           <img src={Img5} alt="left-banner"/>
         </div>
-        <div id="menu" className="menu">
-          <h3 className="menu-header">Menu</h3>
-          <div className="menu-nav">
-            <a href="#menu" onClick={() => this.setItem('salad')}>Salad</a>
-            <a href="#menu" onClick={() => this.setItem('noodlesoup')}>Noodle Soup</a>
-            <a href="#menu" onClick={() => this.setItem('kidsmeal')}>Kids Meal</a>
-            <a href="#menu" onClick={() => this.setItem('customize')}>Build Your Own</a>
-          </div>
+        <div className="menu">
           <div className="menu-display">
             {this.renderItem(this.state.currentItem)}
           </div>

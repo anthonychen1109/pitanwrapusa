@@ -19,7 +19,7 @@ ul.topnav {
   display: flex;
   font-size: 14px;
   height: 40px;
-  justify-content: space-around;
+  justify-content: center;
   opacity: 0.8;
   padding-left: 0;
   position: fixed;
@@ -27,7 +27,8 @@ ul.topnav {
   width: 100%;
   z-index: 9000; }
   ul.topnav li {
-    list-style: none; }
+    list-style: none;
+    padding: 0 50px; }
     ul.topnav li a {
       color: black;
       text-decoration: none;
@@ -49,7 +50,7 @@ ul.topnav li.dropdownIcon {
   width: 100%; }
   .header .header-logo {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%; }
@@ -59,9 +60,24 @@ ul.topnav li.dropdownIcon {
       max-width: 100%; }
 
 .order-btn {
-  display: block;
+  background-color: #AEEA00;
+  display: inline-block;
   margin: 0 auto;
   text-align: center; }
+
+.wrapper {
+  width: 100%;
+  text-align: center; }
+
+.menu-button {
+  background-color: #AEEA00;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+  display: inline;
+  font-size: 4vw;
+  padding: 20px; }
+  .menu-button:hover {
+    cursor: pointer; }
 
 .carousel .carousel-item-1 {
   background-image: url("../images/1.jpg");
@@ -110,7 +126,8 @@ ul.topnav li.dropdownIcon {
 .menu-section {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px; }
+  margin-top: 40px;
+  padding-top: 40px; }
 
 .menu {
   display: flex;
@@ -160,6 +177,9 @@ ul.topnav li.dropdownIcon {
 .customize .customize-choose {
   display: flex;
   justify-content: space-around; }
+  @media only screen and (max-width: 800px) {
+    .customize .customize-choose {
+      flex-direction: column; } }
   .customize .customize-choose h3 {
     color: red; }
 .customize .customize-item {
@@ -171,7 +191,12 @@ ul.topnav li.dropdownIcon {
 .customize-desc {
   display: flex;
   flex-direction: column;
-  padding: 5px; }
+  padding: 5px;
+  width: 33.33%; }
+  @media only screen and (max-width: 800px) {
+    .customize-desc {
+      margin: 0 auto;
+      width: 100%; } }
   .customize-desc h3, .customize-desc p {
     text-align: center; }
 
@@ -203,7 +228,7 @@ ul.topnav li.dropdownIcon {
     font-size: .8em;
     text-align: center; }
   .contact-info div .hours {
-    padding-bottom: 10px; }
+    padding-bottom: 40px; }
 
 .footer {
   align-items: center;
