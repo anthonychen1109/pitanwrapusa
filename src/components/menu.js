@@ -34,8 +34,20 @@ class Menu extends Component {
         return <KidsMeal />
       case 'customize':
         return <Customize />
+      case 'menu':
+        return (
+          <div>
+            <Salad />
+            <br />
+            <NoodleSoup />
+            <br />
+            <KidsMeal />
+            <br />
+            <h5 className="text-center">Sides: 2.5 / Drinks 2.5</h5>
+          </div>
+        )
       default:
-        return <Salad />
+        return <Customize />
     }
   }
 
@@ -46,6 +58,11 @@ class Menu extends Component {
           <img src={Img5} alt="left-banner"/>
         </div>
         <div className="menu">
+          <h1>Menu</h1>
+          <div className="menu-select">
+            <p onClick={() => this.setItem('customize')}>Build Your Own</p>
+            <p onClick={() => this.setItem('menu')}>Menu</p>
+          </div>
           <div className="menu-display">
             {this.renderItem(this.state.currentItem)}
           </div>

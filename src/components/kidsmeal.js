@@ -27,10 +27,6 @@ const KidsMeal = () =>
        )
      }
      )}
-     <br />
-     <div className="customize-side">
-       <h5>Sides: 2.5 / Drinks 2.5</h5>
-     </div>
    </div>
 
 export default KidsMeal;
