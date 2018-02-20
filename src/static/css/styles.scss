@@ -37,6 +37,9 @@ ul.topnav {
   li {
     list-style: none;
     padding: 0 50px;
+    @media only screen and (max-width: 800px) {
+      padding: 0;
+    }
     a {
       color: $nav-anchor-color;
       text-decoration: none;
