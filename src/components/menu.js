@@ -58,7 +58,6 @@ class Menu extends Component {
           <img src={Img5} alt="left-banner"/>
         </div>
         <div className="menu">
-          <h1>Menu</h1>
           <div className="menu-select">
             <p onClick={() => this.setItem('customize')}>Build Your Own</p>
             <p onClick={() => this.setItem('menu')}>Menu</p>
