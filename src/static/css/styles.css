@@ -141,6 +141,19 @@ ul.topnav li.dropdownIcon {
   flex-direction: column;
   margin-bottom: 40px;
   margin-top: 40px; }
+  .menu h1 {
+    text-align: center; }
+
+.menu-select {
+  display: flex;
+  justify-content: center; }
+  .menu-select p {
+    color: #AEEA00;
+    font-size: 1.5em;
+    padding: 0 10px; }
+    .menu-select p:hover {
+      color: black;
+      cursor: pointer; }
 
 .menu-nav {
   display: flex;
