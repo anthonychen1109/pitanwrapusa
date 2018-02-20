@@ -180,12 +180,9 @@ ul.topnav li.dropdownIcon {
   display: grid;
   grid-template-columns: 1fr 1fr;
   line-height: 30px; }
-  .grid div:nth-child(1) {
-    text-align: center; }
-  .grid div:nth-child(2) {
-    text-align: center; }
   .grid div {
-    font-family: Verdana; }
+    font-family: Verdana;
+    text-align: center; }
 
 .customize .item-header {
   margin-bottom: 40px; }
