@@ -106,7 +106,8 @@ ul.topnav li.dropdownIcon {
 
 .about {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding-top: 40px; }
   @media only screen and (max-width: 800px) {
     .about {
       flex-direction: column; } }
