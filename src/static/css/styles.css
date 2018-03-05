@@ -31,10 +31,12 @@ ul.topnav {
     @media only screen and (max-width: 800px) {
       ul.topnav li {
         padding: 0; } }
-    ul.topnav li a {
+    ul.topnav li a, ul.topnav li span {
       color: black;
       text-decoration: none;
       text-transform: uppercase; }
+      ul.topnav li a:hover, ul.topnav li span:hover {
+        cursor: pointer; }
 
 ul.topnav li.dropdownIcon {
   display: none; }
@@ -308,7 +310,7 @@ ul.modal-hours li {
       list-style: none;
       float: none;
       padding-left: 10px; }
-      ul.responsive li a {
+      ul.responsive li a, ul.responsive li span {
         color: black;
         display: block;
         font-size: 14px;
