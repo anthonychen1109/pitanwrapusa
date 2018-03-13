@@ -33,19 +33,19 @@ const Contact = () =>
           <br />
           <p><strong>HOURS</strong></p>
           <p className="hours">
-            Monday 11:00 AM to 9:00 PM
+            Monday 11:00 AM to 8:30 PM
             <br />
-            Tuesday 11:00 AM to 9:00 PM
+            Tuesday 11:00 AM to 8:30 PM
             <br />
-            Wednesday 11:00 AM to 9:00 PM
+            Wednesday 11:00 AM to 8:30 PM
             <br />
-            Thursday 11:00 AM to 9:00 PM
+            Thursday 11:00 AM to 8:30 PM
             <br />
             Friday 11:00 AM to 9:00 PM
             <br />
             Saturday 11:00 AM to 9:00 PM
             <br />
-            Sunday 12:00 AM to 8:30 PM
+            Sunday Closed
           </p>
         </div>
       </div>

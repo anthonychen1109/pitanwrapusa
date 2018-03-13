@@ -74,18 +74,19 @@ class Footer extends Component {
                 >
                 <p className="text-center"><strong>Hours</strong></p>
                   <ul className="modal-hours">
-                    <li>Monday: 11:00am-9:00pm</li>
-                    <li>Tuesday: 11:00am-9:00pm</li>
-                    <li>Wednesday: 11:00am-9:00pm</li>
-                    <li>Thursday: 11:00am-9:00pm</li>
+                    <li>Monday: 11:00am-8:30pm</li>
+                    <li>Tuesday: 11:00am-8:30pm</li>
+                    <li>Wednesday: 11:00am-8:30pm</li>
+                    <li>Thursday: 11:00am-8:30pm</li>
                     <li>Friday: 11:00am-9:00pm</li>
                     <li>Saturday: 11:00am-9:00pm</li>
-                    <li>Sunday: 12:00am-8:30pm</li>
+                    <li>Sunday: Closed</li>
                   </ul>
               </Modal>
             </li>
-            <li>mon-thur: 11:00am-9:00pm</li>
-            <li>sun: 12:00am-8:30pm</li>
+            <li>mon-thur: 11:00am-8:30pm</li>
+            <li>fri-sat: 11:00am-9:00pm</li>
+            <li>sun: Closed</li>
             <li className="footer-pin">
               <span role="img" aria-label="Pin" onClick={this.openModal}>&#x1f4cc; map</span>
             </li>
